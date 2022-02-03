@@ -8,4 +8,4 @@ st.write("This web app shows clusters of different amazon products based on desc
 
 
 df = pd.read_csv('clustered_description.csv')
-st.dataframe(df)
+st.dataframe(df[['product_name','description']])
