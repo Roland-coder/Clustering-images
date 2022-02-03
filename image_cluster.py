@@ -12,5 +12,5 @@ st.dataframe(df[['product_name','description']])
 grouped = df.groupby('cluster')
 
 for name, group in grouped:
-  print("Below are the products and description in cluster " + name)
+  print("Below are the products and description in cluster ", name)
   print(group['description'])
